@@ -12,7 +12,7 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent implements OnInit {
   http = inject(HttpClient);
   title = 'DatingApp';
-  users = any;
+  users : any;
 
   ngOnInit(): void {
     this.http.get('https://localhost:5001/api/users').subscribe({
